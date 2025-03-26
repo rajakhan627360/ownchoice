@@ -18,7 +18,6 @@ schema
     .is().not().oneOf(['Passw0rd', 'Password123']); // Blacklist these values
 
 const fs = require("fs");
-const { error, log } = require("console");
 
 async function createRecord(req, res) {
     if (schema.validate(req.body.password)) {

@@ -18,9 +18,10 @@ async function createRecord(req, res) {
 
         try {
             fs.unlinkSync(data.pic)
-        } catch (error) {console.log(error);
-         }
-        
+        } catch (error) {
+            console.log(error);
+        }
+
 
 
         Object.keys(errorMessage).length === 0 ?
